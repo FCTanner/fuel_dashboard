@@ -8,6 +8,9 @@ output:
     source_code: embed
 ---
 
+
+[Data for this dashboard](https://github.com/rfordatascience/tidytuesday/blob/master/data/2022/2022-03-01/readme.md) & [Code for the maps](https://beta.rstudioconnect.com/jjallaire/htmlwidgets-waste-sites/htmlwidgets-waste-sites.html)
+
 ```{r setup, include=FALSE}
 library(flexdashboard)
 library(leaflet)
@@ -132,6 +135,4 @@ leaflet() %>%
                    fillOpacity = 0.1,
                    opacity = 0.05)
 ```
-
-
 
