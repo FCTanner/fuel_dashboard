@@ -35,7 +35,7 @@ public_access <- stations |>
                               fuel_type_code == "HY" ~ "Hydrogen",
                               fuel_type_code == "LNG" ~ "Liquefied Natural Gas (LNG)",
                               fuel_type_code == "LPG" ~ "Propane (LPG)",
-                              fuel_type_code == "ELEC" ~ "Electric"))
+                              fuel_type_code == "ELEC" ~ "Electric charging station"))
 
 map_dat <- public_access |> 
   filter(fuel_type_code != "ELEC") |> 
@@ -114,7 +114,7 @@ public_access |>
         axis.title.x = element_blank())
 ```
 
-### Electric 
+### Electric charging stations
 
 ```{r}
 public_access_electric <- public_access |> 
